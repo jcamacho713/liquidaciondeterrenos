@@ -217,6 +217,14 @@
       box-shadow: 0 8px 24px rgba(0,0,0,.12);
     }
 
+    .about-text {
+      text-align: left;
+    }
+
+    .about-text .about-button {
+      margin-top: 20px;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -315,6 +323,15 @@
       .btn {
         width: 100%;
         max-width: 320px;
+      }
+
+      .about-text {
+        text-align: center;
+      }
+
+      .about-text .about-button {
+        display: flex;
+        justify-content: center;
       }
     }
 
@@ -424,7 +441,7 @@
   <section class="section">
     <div class="about">
       <img src="Fishing1.jpeg" alt="Representante de liquidación de terrenos" />
-      <div>
+      <div class="about-text">
         <h2>Atención cercana y confianza</h2>
         <p>
           Queremos ayudarte a conocer estas oportunidades de terrenos con información clara y atención directa.
@@ -432,14 +449,14 @@
         <p style="margin-top: 15px;">
           Nuestro objetivo es ofrecerte una experiencia amigable, sencilla y enfocada en ayudarte a encontrar el lugar ideal.
         </p>
-        <p style="margin-top: 20px;">
+        <div class="about-button">
           <a class="btn btn-primary" href="tel:4693336369">
             <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.56 3.53.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.19 2.42.56 3.53a1 1 0 0 1-.24 1.01l-2.2 2.25z"/>
             </svg>
             Llama ahora
           </a>
-        </p>
+        </div>
       </div>
     </div>
   </section>
