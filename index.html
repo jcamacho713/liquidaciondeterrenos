@@ -98,7 +98,10 @@
     }
 
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       padding: 14px 26px;
       border-radius: 10px;
       font-weight: bold;
@@ -113,6 +116,13 @@
 
     .btn-primary:hover {
       opacity: 0.92;
+    }
+
+    .btn-icon {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      flex-shrink: 0;
     }
 
     .video-section {
@@ -143,17 +153,16 @@
       margin: 0 auto 24px;
     }
 
-    .video-wrapper {
+    .video-embed {
       position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
+      width: 100%;
+      padding-top: 75%;
       overflow: hidden;
       border-radius: 14px;
       background: #ddd;
     }
 
-    .video-wrapper iframe,
-    .video-wrapper video {
+    .video-embed iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -340,7 +349,6 @@
 
   <section class="hero">
     <div class="hero-content">
-
       <div class="logo-wrap">
         <img src="liquidacionlogo.png" alt="Liquidación de Terrenos logo">
       </div>
@@ -351,7 +359,12 @@
       </p>
 
       <div class="cta-buttons">
-        <a class="btn btn-primary" href="tel:4693336369">Llama ahora</a>
+        <a class="btn btn-primary" href="tel:4693336369">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.56 3.53.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.19 2.42.56 3.53a1 1 0 0 1-.24 1.01l-2.2 2.25z"/>
+          </svg>
+          Llama ahora
+        </a>
       </div>
     </div>
   </section>
@@ -362,11 +375,12 @@
       Mira el mensaje principal y descubre por qué esta puede ser tu oportunidad para invertir en tu terreno.
     </p>
 
-    <div class="video-wrapper">
+    <div class="video-embed">
       <iframe
-        src="YOUR_VIDEO_LINK"
-        title="Video principal"
-        allowfullscreen>
+        src="https://player.vimeo.com/video/1179319326?badge=0&autopause=0&player_id=0&app_id=58479"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Video principal">
       </iframe>
     </div>
   </section>
@@ -409,7 +423,12 @@
           Nuestro objetivo es ofrecerte una experiencia amigable, sencilla y enfocada en ayudarte a encontrar el lugar ideal.
         </p>
         <p style="margin-top: 20px;">
-          <a class="btn btn-primary" href="tel:4693336369">Hablar ahora</a>
+          <a class="btn btn-primary" href="tel:4693336369">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.56 3.53.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.19 2.42.56 3.53a1 1 0 0 1-.24 1.01l-2.2 2.25z"/>
+            </svg>
+            Llama ahora
+          </a>
         </p>
       </div>
     </div>
@@ -439,11 +458,22 @@
       <p style="font-size: 1.3rem; margin-bottom: 20px;">
         <a href="tel:4693336369">(469) 333-6369</a>
       </p>
-      <a class="btn btn-primary" href="tel:4693336369">Llamar ahora</a>
+      <a class="btn btn-primary" href="tel:4693336369">
+        <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.56 3.53.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.19 2.42.56 3.53a1 1 0 0 1-.24 1.01l-2.2 2.25z"/>
+        </svg>
+        Llama ahora
+      </a>
     </div>
   </section>
 
   <footer>
+    © 2026 Liquidación de Terrenos. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
     © 2026 Liquidación de Terrenos. Todos los derechos reservados.
   </footer>
 
